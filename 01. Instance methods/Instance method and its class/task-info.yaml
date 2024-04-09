@@ -16,7 +16,14 @@ files:
     visible: true
     encrypted_text: a3Oc3sOKihNm0o8Cls6Am4BU5WKavemmrYTYXmzh/WuQfzHR3doZI/3hHs82WT1cfu+S8Hbqcvqsd43cOU6Yw4tKU2eBBAacR/guEJ9XR/DWe7UxqJODhdAO/zUEx00FiLkjnN2tkLxBWwLWug1KXQ==
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 09 Apr 2024 16:12:56 UTC"
 record: -1
+selected_options:
+  - 1
+  - 2
+  - 3
 custom_name: Instance method and its class
 local_check: true

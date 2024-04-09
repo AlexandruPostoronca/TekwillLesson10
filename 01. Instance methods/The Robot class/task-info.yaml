@@ -18,7 +18,16 @@ files:
     visible: true
     encrypted_text: a3Oc3sOKihNm0o8Cls6Am4BU5WKavemmrYTYXmzh/WuQfzHR3doZI/3hHs82WT1cfu+S8Hbqcvqsd43cOU6Yw4tKU2eBBAacR/guEJ9XR/DWe7UxqJODhdAO/zUEx00FiLkjnN2tkLxBWwLWug1KXQ==
     learner_created: false
-status: Unchecked
+  - name: src/Robot.java
+    visible: true
+    encrypted_text: BPrPxsoPO0ddRfXxWyDgbA==
+    learner_created: true
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 09 Apr 2024 19:47:46 UTC"
 record: -1
+selected_options:
+  - 5
 custom_name: The Robot class
 local_check: true
