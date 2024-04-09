@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":03._Getters_and_setters-Getting_the_full_name" external.linked.project.path="$MODULE_DIR$/../../../../03. Getters and setters/Getting the full name" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="10._Instance_methods" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../03. Getters and setters/Getting the full name">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../03. Getters and setters/Getting the full name/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../03. Getters and setters/Getting the full name/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../03. Getters and setters/Getting the full name/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

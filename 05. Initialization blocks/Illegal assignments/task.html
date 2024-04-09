@@ -1,0 +1,22 @@
+<h2>Illegal assignments</h2>
+<p>You are given a class <code>Example</code> with multiple static blocks.</p>
+
+<pre><code>class Example {
+
+    static final int FIELD_1;
+    static int field2 = 40; // (1)
+    int field3;
+    
+    static {
+        FIELD_1 = 30; // (2)
+        field2 = 50;  // (3)
+        field3 = 100; // (4)
+    }
+    
+    static {
+        FIELD_1 = 30; // (5)
+        field2 = 80;  // (6)
+    }
+}</code></pre>
+
+<p>Select all <strong>illegal</strong> assignments.</p>

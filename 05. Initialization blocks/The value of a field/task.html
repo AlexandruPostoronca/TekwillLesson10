@@ -1,0 +1,25 @@
+<h2>The value of a field</h2>
+<p>Here's a class containing two instance initialization blocks.</p>
+
+<pre><code>class A {
+
+    int field = 2;
+
+    {
+        field++;
+    }
+
+    public A() {
+        field = 8;
+    }
+
+    {
+        field++;
+    }
+}</code></pre>
+
+<p>We have created an instance of the class.</p>
+
+<pre><code>A instance = new A();</code></pre>
+
+<p>What is the value of <code>field</code>?</p>

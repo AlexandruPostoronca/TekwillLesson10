@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: You can create instances of MyClass using the keyword new inside the method2
+    is_correct: true
+  - text: You can create instances of MyClass using the keyword new inside public classes
+      that belong to the same package.
+    is_correct: false
+  - text: You can't create instances of MyClass using the keyword new inside the method1
+    is_correct: false
+  - text: You can't create instances of MyClass using the keyword new inside classes
+      that belong to other packages.
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    encrypted_text: a3Oc3sOKihNm0o8Cls6Am4BU5WKavemmrYTYXmzh/WuQfzHR3doZI/3hHs82WT1cfu+S8Hbqcvqsd43cOU6Yw4tKU2eBBAacR/guEJ9XR/DWe7UxqJODhdAO/zUEx00FiLkjnN2tkLxBWwLWug1KXQ==
+    learner_created: false
+status: Unchecked
+record: -1
+custom_name: Statements
+local_check: true

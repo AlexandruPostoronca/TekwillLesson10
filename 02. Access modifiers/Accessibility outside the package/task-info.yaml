@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Do not write an access modifier
+    is_correct: true
+  - text: Use the keyword protected
+    is_correct: false
+  - text: Use the keyword final
+    is_correct: false
+  - text: Use the keyword private
+    is_correct: false
+  - text: Use the keyword package
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    encrypted_text: a3Oc3sOKihNm0o8Cls6Am4BU5WKavemmrYTYXmzh/WuQfzHR3doZI/3hHs82WT1cfu+S8Hbqcvqsd43cOU6Yw4tKU2eBBAacR/guEJ9XR/DWe7UxqJODhdAO/zUEx00FiLkjnN2tkLxBWwLWug1KXQ==
+    learner_created: false
+status: Unchecked
+record: -1
+custom_name: Accessibility outside the package
+local_check: true

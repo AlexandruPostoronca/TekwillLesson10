@@ -1,0 +1,17 @@
+<h2>Find the value</h2>
+<p>You have a class with static members:</p><pre><code>public class AClass {
+
+    private static String str = "a string";
+
+    static {
+        str = "another string";
+    }
+
+    public AClass() {
+        str = "yet another string";
+    }
+
+    public static String getStr() {
+        return str;
+    }
+} </code></pre><p>What is the value of the static field <code>str</code> during runtime before and after creating an instance of this class?</p>

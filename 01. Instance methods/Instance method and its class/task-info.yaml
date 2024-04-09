@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: A class can have only a single instance method.
+    is_correct: false
+  - text: A class can have multiple instance methods.
+    is_correct: true
+  - text: Calling the same instance method for different objects of a class can produce
+      different result.
+    is_correct: true
+  - text: An instance method can access values of the fields.
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    encrypted_text: a3Oc3sOKihNm0o8Cls6Am4BU5WKavemmrYTYXmzh/WuQfzHR3doZI/3hHs82WT1cfu+S8Hbqcvqsd43cOU6Yw4tKU2eBBAacR/guEJ9XR/DWe7UxqJODhdAO/zUEx00FiLkjnN2tkLxBWwLWug1KXQ==
+    learner_created: false
+status: Unchecked
+record: -1
+custom_name: Instance method and its class
+local_check: true

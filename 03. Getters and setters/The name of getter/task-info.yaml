@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: readTitle
+    is_correct: false
+  - text: getTitle
+    is_correct: true
+  - text: isTitle
+    is_correct: false
+  - text: title
+    is_correct: false
+  - text: setTitle
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    encrypted_text: a3Oc3sOKihNm0o8Cls6Am4BU5WKavemmrYTYXmzh/WuQfzHR3doZI/3hHs82WT1cfu+S8Hbqcvqsd43cOU6Yw4tKU2eBBAacR/guEJ9XR/DWe7UxqJODhdAO/zUEx00FiLkjnN2tkLxBWwLWug1KXQ==
+    learner_created: false
+status: Unchecked
+record: -1
+custom_name: The name of getter
+local_check: true

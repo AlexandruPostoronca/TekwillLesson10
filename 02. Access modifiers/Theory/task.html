@@ -1,0 +1,179 @@
+<h2>Access modifiers</h2>
+<p>You've probably seen the following piece of code: </p>
+<pre><code>public static void main(String[] args) {
+    // some code goes here
+}</code></pre><p>Why is the word "public" even there? As you can probably guess, it means that the
+    <code>main(...)</code> method is available to everyone. The word <code>public</code> here is an access modifier.</p>
+<p>An<strong> access modifier</strong> is a special keyword that specifies who is allowed to use your code or a special
+    part of it. It can be placed in front of any field, method or the entire class.</p><p>So, you already know at least
+    one of the access modifiers! The others are: <code>package-private</code>, <code>protected</code>, and
+    <code>private</code>. Why do we need them? Let's find out.</p>
+
+<h4>OK, so why should I use them?</h4>
+<p>There are two main reasons to take access under control: clarity and safety of code.</p>
+<p><strong>Code clarity.</strong> Imagine your code is a complicated engine of a washing machine. There are some
+    available functions – for example, choosing a washing program or starting a washing process.</p>
+<p>What can we do to help the user quickly figure out how to wash their clothes? We can cover the engine with the body
+    and add some buttons for choosing a washing mode and starting the process. The user has no need to know what is
+    going on inside the machine’s body; the buttons to get the result are more than enough.</p>
+<p>That’s how access control helps in code – you can <strong>“hide” the engine from the user </strong>by restricting
+    access and simply providing them with the public “buttons”.</p>
+<p><strong>Code safety.</strong> Now imagine you have developed a rather useful library that is used by other
+    developers. One day some Jane Doe wants to use your code’s functionality in her project, but the problem is that she
+    needs to change one variable in one of your classes. If it is public, nothing can stop her from doing that in her
+    code before using method A from the library.</p>
+<p>What can happen if the variable is used somewhere in method B? The B method would probably start to act
+    unpredictably. So, protecting important parts of your code is a guarantee that it will be<strong> used as an
+        unmodifiable part </strong>and its behavior will be the exact one you have developed for it.</p>
+
+<h4>Public and package-private classes</h4>
+<p>In fact, when you manage the access in your code, you simply divide objects of your program into two main groups:
+    top-level items and low-level items. Fields and methods that are explicitly used outside the class are called
+    top-level fields and methods. If fields and methods are used inside the class, they are known as low-level ones.
+    This low-level and top-level logic is also applicable to classes.</p>
+<p>Usually, using low-level items helps to unload top-level classes, methods or fields in order to structure and
+    decompose the code. If these items are not explicitly used, it will be efficient to restrict access to them.</p>
+<p>Now let’s see how we can set restrictions to different
+    parts of the code. A top-level class (not an inner one, not a nested one) can have one of two following
+    modifiers:</p>
+<ul>
+    <li>
+        <strong>package-private (default, no explicit modifier): </strong>visible only for classes from the same
+        package;
+    </li>
+    <li><strong>public:</strong> visible to all classes everywhere.</li>
+</ul>
+<p>Here is a class inside the package <code>org.aumanet.java.packages.theory.p1</code>. with default package-private
+    access:</p>
+<pre><code>package org.aumanet.java.packages.theory.p1;
+
+class PackagePrivateClass{
+}</code></pre>
+
+<p>This class can be used only by other classes from the same package. It's not even visible for classes from any other
+    package, including:</p>
+<pre><code>org.aumanet
+
+org.aumanet.java.packages.theory
+
+default package</code></pre>
+<p>Note the first two examples – if the class is package-private in package <code>a.b</code>,
+    it is still unavailable from package <code>a.c</code> and package <code>a</code> itself.</p>
+<p>Here is a public class inside the package <code>org.aumanet.java.packages.theory.p2</code></p>
+<pre><code>package org.aumanet.java.packages.theory.p2;
+
+public class PublicClass {
+}</code></pre>
+
+<p>This class has no access restrictions, it is visible to all classes and can be used everywhere, including:</p>
+<pre><code>org.aumanet
+
+org.aumanet.java.packages.theory
+
+org.aumanet.java.packages.theory.p1
+
+default package</code></pre>
+<p>The common way of using top-level class modifiers is:</p>
+<ol>
+    <li>make the classes containing methods for users (the “buttons”) <strong>public</strong>;</li>
+    <li>make all other classes with low-level logic methods used by public ones <strong>package-private</strong>
+        (cover the engine with the body).
+    </li>
+</ol>
+<p>Remember: everything that’s not meant to be used/changed by classes from other packages should not be public.</p>
+
+<h4>Private members</h4>
+<p>A class member (a field or a method, e.g. class constructor) has more options to choose from:
+    <code>private</code>, <code>package-private</code>, <code>protected</code> and <code>public</code>.
+    As you can see, there are two additional modifiers here. Let's consider member modifiers in more detail.</p>
+<p>Fields are often declared <code>private</code> to control access to them from any other class. In some cases,
+    these fields are only used internally in the class and there is no way to change and even access them from any other
+    class. In other cases, it can be done via <strong>accessor methods</strong> (e.g. getters and setters).
+    <strong>Getter</strong> and <strong>setter</strong> methods are used to protect and hide your data when creating
+    classes. A getter method returns the value of a field, while a setter method sets or updates the value. We will
+    discuss the main features of getter and setter methods later in the topic related to these terms.</p>
+<p>Private methods are used to hide the internal low-level logic implementation from the rest of the code and make
+    public methods more brief and readable.</p>
+<p>Here is the class <code>Counter</code> with the private field <code>current</code>. This field can be read-only with
+    the method <code>getCurrent()</code> , a getter method, and changed with the <code>inc()</code>method. The last one
+    is not exactly a setter method because it doesn't manually set a value to a
+    <code>current</code> variable, but just increments it.</p>
+<pre><code>public class Counter {
+   private long current = 0;
+
+   public long getCurrent() {
+       return current;
+   }
+
+
+   public long inc() {
+       inc(1L);
+       return current;
+   }
+
+
+   private void inc(long val) {
+       current += val;
+   }
+}</code></pre><p>Sometimes, a private class constructor is required. This type of constructor can only be used inside
+    the class, e.g. from another constructor, which can be public or private too, or from the class methods.</p>
+
+<h4>Package-private members</h4>
+<p>A<strong> package-private</strong> access modifier does not require any keyword. If a field, a method, or a
+    constructor has this modifier, then it can be read or changed from any class inside the same package.</p><p>Let's
+    see an example. Here are two classes in the same package: <code>Salary</code> and <code>Promotion</code>.</p><p>The
+    class <code>Salary</code> has a package-private field and a constructor. An instance of the <code>Salary</code>
+    class can be created inside a class of <code>Promotion</code>, and the field can also be accessed by
+    <code>Promotion</code> and its members because they belong to the same package.</p>
+<pre><code>public class Salary {
+    long income;
+
+    Salary(long income) {
+        this.income = income;
+    }
+}
+
+public class Promotion {
+    Salary salary;
+
+    Promotion(Salary salary) {
+        this.salary = salary;
+    }
+
+    public void promote() {
+        salary.income += 1500;
+    }
+}</code></pre>
+
+<h4>Protected and public members</h4>
+<p>Disclaimer: you will learn to use these two modifiers later!</p><p>If a class member has the
+    <strong>protected </strong>access modifier, it can be accessed from classes inside the same package and all
+    subclasses of this class (including the ones in other packages). For now, it is important to remember that the
+    protected option is less restricting than package-private as it allows some classes from other packages access to
+    the code member.</p><p>A<strong> public</strong> access modifier means that there is no restriction on using a
+    field, method, or class. It's often used for constructors, and methods representing the class API but not commonly
+    used with fields.</p><p>Here are common ways to understand which access modifier to choose. It is not the ultimate
+    algorithm, because the inheritance and subclass topics have not been covered yet, but it can help you understand the
+    main use cases of the modifiers.</p>
+<img alt="" src="10.02.1.png" width="800" style="margin: auto;">
+<p>So, let's review the names of access modifiers (from most to least limiting):</p>
+<ul>
+    <li><p><strong>private</strong> — available only inside a class;</p></li>
+    <li><p><strong>package-private</strong> (also known as <strong>default</strong>, implicit) — available for all
+        classes in the same package;</p></li>
+    <li><p><strong>protected</strong> — available for classes in the same package and for subclasses (will be covered
+        later);</p></li>
+    <li><p><strong>public </strong>— available for all classes everywhere.</p></li>
+</ul>
+<img alt="" src="10.02.2.png" width="498" style="margin: auto;">
+<p>The table above illustrates the level of access provided by the access modifiers: the class always has access to its
+    members, and so on. Note that by a subclass here, we mean only a subclass of this class used in another package. We
+    will learn about inheritance and subclasses later.</p><p></p><p></p>
+<div><p>Remember that only <strong>public</strong> or default (no keywords) modifiers may be used when declaring
+    classes. All four of them can be applied to class members: fields, methods, etc.</p></div><p></p><p></p>
+
+<h4>Conclusion</h4>
+<p>In this topic, you learned about access modifiers that allow you to determine who will be able to use the code. Using
+    them makes your code safer and clearer. In conclusion, here is a piece of advice: use the most restrictive access
+    level that makes sense for a particular member. Don't make all members public.</p>
+

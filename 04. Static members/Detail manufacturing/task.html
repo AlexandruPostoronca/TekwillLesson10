@@ -1,0 +1,30 @@
+<h2>Detail manufacturing</h2>
+John decided to create a manufacturing firm. It produces various, mainly mechanical details. John wants to automate details producing requests, but sadly he cannot write code. He asks you to write a simple manufacturing controller.
+<p></p>
+
+<p>You are given two methods, <code>requestProduct</code> and <code>getNumberOfProducts</code>:</p>
+
+<ol>
+    <li><code>getNumberOfProducts</code> should return the total number of requested products;</li>
+    <li><code>requestProduct</code> should keep track of requested products, and format the product argument in the
+        format: <code>No. Requested Detail</code>.
+    </li>
+</ol>
+
+<p>The class should have only one <code>int</code> field.</p>
+
+<p>For example:</p>
+<pre><code>ManufacturingController.requestProduct("detail 1");</code></pre>
+<p>should return:</p>
+<pre><code>1. Requested detail 1</code></pre>
+
+<p>and</p>
+
+<pre><code>ManufacturingController.requestProduct("Wrench");</code></pre>
+<p>should return:</p>
+<pre><code>2. Requested Wrench</code></pre>
+
+<p>After execution of these two commands,</p>
+<pre><code>ManufacturingController.getNumberOfProducts();</code></pre>
+<p>should return:</p>
+<pre><code>2</code></pre>

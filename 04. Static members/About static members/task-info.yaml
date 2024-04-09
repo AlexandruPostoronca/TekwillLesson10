@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: A static method can be accessed by the class name and doesn't need an object.
+    is_correct: true
+  - text: A static method cannot be invoked by an instance method of the same class.
+    is_correct: false
+  - text: A static field has the same value for all instances of the class.
+    is_correct: true
+  - text: A static method can access static and non-static fields.
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    encrypted_text: a3Oc3sOKihNm0o8Cls6Am4BU5WKavemmrYTYXmzh/WuQfzHR3doZI/3hHs82WT1cfu+S8Hbqcvqsd43cOU6Yw4tKU2eBBAacR/guEJ9XR/DWe7UxqJODhdAO/zUEx00FiLkjnN2tkLxBWwLWug1KXQ==
+    learner_created: false
+status: Unchecked
+record: -1
+custom_name: About static members
+local_check: true

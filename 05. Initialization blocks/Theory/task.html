@@ -1,0 +1,88 @@
+<h2>Initialization blocks</h2>
+<h4>Static initialization block</h4>
+<p>A <strong>static initialization block</strong> is a block of code enclosed in braces <code>{}</code> and preceded by the <code>static</code> keyword:</p>
+<pre><code>static {
+    // code
+}</code></pre>
+<p>It's used to initialize <strong>static fields</strong> and <strong>constants</strong>, just like constructors help to initialize instance fields. We can create objects and invoke static methods in a static block.</p>
+<p>Here is an example.</p>
+<pre><code>import java.util.Date;
+
+public class StaticInitBlockExample {
+
+    private static String stringField;
+    private static Date dateField;
+
+    private static final String A_STRING_CONSTANT;
+
+    static {
+        stringField = getEmptyString();
+        dateField = new Date();
+        A_STRING_CONSTANT = "unknown";
+    }
+
+    private static String getEmptyString() {
+        return "empty";
+    }
+}</code></pre>
+<p>A class can have multiple static blocks which will be executed in the order in which they appear in the source code. The values initialized in the first block are overwritten by the following blocks.</p>
+<p>But the question is, what is performed earlier — the direct assignment to static fields or the static block?</p>
+<p>See the following example.</p>
+<pre><code>public class StaticInitOrderExample {
+
+    static int field = 30; // the first assignment
+
+    static {
+        field = 50; // the second assignment
+    }
+}</code></pre>
+<p>First, the direct assignment to the static field is performed. After that, the static block is executed. If you print the value of <code>field</code>, it will be equal to 50.</p>
+<p></p><div><strong>Note,</strong> it's impossible to access instance fields and methods in a <strong>static block</strong>.</div><p></p>
+<p>A static initialization block is executed once for the whole class, not for each instance of the class.</p>
+
+<h4>Instance initialization block</h4>
+<p>There is also an <strong>instance initialization block</strong>. It's used to initialize instance data members. It is run each time an object of the class is created. An instance initialization block is code enclosed in braces <code>{}</code>.</p>
+<pre><code>class InstanceInitBlockExample {
+
+    private int field;
+
+    {
+        field = 40;
+    }
+}</code></pre>
+<p>Of course, we can also directly assign values to fields:</p>
+<pre><code>private int field = 40;</code></pre>
+<p>But if we need to perform more complex logic before a constructor is invoked, it's convenient to write an instance initialization block. For example, an instance initialization block is useful when we need to fill an array:</p>
+<pre><code>class ArrayInitExample {
+
+    private int[] array;
+
+    { 
+        System.out.println("Before the constructor");
+
+        array = new int[10];
+        for (int i = 0; i &lt; array.length; i++) {
+            array[i] = i * i;
+        } 
+    }
+    
+    public void print() {
+        for (int num : array) {
+            System.out.printf("%d ", num);
+        }
+    }
+}</code></pre>
+<p>The <strong>instance initialization block </strong>is executed before any constructor of a class (but after the superclass constructors). The java compiler invokes the block as the first statement in the constructor, before other statements.</p>
+<p>All instances of this class will be initialized during creation. There is an example:</p>
+<pre><code>public class UsingArrayExample {
+    public static void main(String args[]) {
+        ArrayInitExample obj = new ArrayInitExample();
+        obj.print();
+    }
+}</code></pre>
+<p>This code outputs:</p>
+<pre><code>Before the constructor
+0 1 4 9 16 25 36 49 64 81 </code></pre>
+<p>You can write as many initialization blocks as you need. They will be performed in the order in which they appear in your code.</p>
+<p></p><div><strong>Note,</strong> static class members can be accessed in an <strong>instance initialization block</strong>.</div><p></p>
+

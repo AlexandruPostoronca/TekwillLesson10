@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: Instance methods cannot return any values.
+    is_correct: false
+  - text: Instance methods cannot take any parameters.
+    is_correct: false
+  - text: Instance methods have the keyword instance in their declaration.
+    is_correct: false
+  - text: Instance methods don't have the keyword static in their declaration.
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    encrypted_text: a3Oc3sOKihNm0o8Cls6Am4BU5WKavemmrYTYXmzh/WuQfzHR3doZI/3hHs82WT1cfu+S8Hbqcvqsd43cOU6Yw4tKU2eBBAacR/guEJ9XR/DWe7UxqJODhdAO/zUEx00FiLkjnN2tkLxBWwLWug1KXQ==
+    learner_created: false
+status: Unchecked
+record: -1
+custom_name: What is it?
+local_check: true

@@ -1,0 +1,24 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: In the body of doSomething you can access the field magic using the keyword
+      this.
+    is_correct: false
+  - text: In the body of doDo you can access the field TEXT.
+    is_correct: true
+  - text: In the body of doSomething you can directly invoke the method doDo.
+    is_correct: false
+  - text: In the body of doSomething you can access the field TEXT.
+    is_correct: true
+  - text: In the body of doDo you can directly  invoke the method doSomething.
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    encrypted_text: a3Oc3sOKihNm0o8Cls6Am4BU5WKavemmrYTYXmzh/WuQfzHR3doZI/3hHs82WT1cfu+S8Hbqcvqsd43cOU6Yw4tKU2eBBAacR/guEJ9XR/DWe7UxqJODhdAO/zUEx00FiLkjnN2tkLxBWwLWug1KXQ==
+    learner_created: false
+status: Unchecked
+record: -1
+custom_name: Accessing static members
+local_check: true

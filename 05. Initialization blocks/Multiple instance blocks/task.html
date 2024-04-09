@@ -1,0 +1,19 @@
+<h2>Multiple instance blocks</h2>
+<p>Here's a class <code>A</code> containing multiple instance initialization blocks:</p>
+
+<pre><code>class A {
+
+    {
+        System.out.println("block A");
+    }
+
+    public A() {
+        System.out.println("constructor");
+    }
+
+    {
+        System.out.println("block B");
+    }
+}</code></pre>
+
+<p>What is the order of outputs?</p>

@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: It's possible to get a value of instanceField inside the staticMethod.
+    is_correct: false
+  - text: It's possible to get a value of staticField inside the instanceMethod.
+    is_correct: true
+  - text: It's impossible to get a value of staticField inside the class constructor.
+    is_correct: false
+  - text: It's possible to get a value of staticField inside the staticMethod.
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    encrypted_text: a3Oc3sOKihNm0o8Cls6Am4BU5WKavemmrYTYXmzh/WuQfzHR3doZI/3hHs82WT1cfu+S8Hbqcvqsd43cOU6Yw4tKU2eBBAacR/guEJ9XR/DWe7UxqJODhdAO/zUEx00FiLkjnN2tkLxBWwLWug1KXQ==
+    learner_created: false
+status: Unchecked
+record: -1
+custom_name: Statements
+local_check: true

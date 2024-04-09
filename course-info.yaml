@@ -1,0 +1,21 @@
+type: marketplace
+title: 10. Instance methods
+language: English
+summary: |-
+  - 01. Instance methods
+  - 02. Access modifiers
+  - 03. Getters and setters
+  - 04. Static members
+  - 05. Initialization blocks
+programming_language: Java
+content:
+  - 01. Instance methods
+  - 02. Access modifiers
+  - 03. Getters and setters
+  - 04. Static members
+  - 05. Initialization blocks
+mode: Study
+environment_settings:
+  jvm_language_level: JDK_17
+vendor:
+  name: Alexandru Umaneț

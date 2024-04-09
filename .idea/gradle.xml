@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="zulu-21" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/01. Instance methods/Car" />
+            <option value="$PROJECT_DIR$/01. Instance methods/Circle" />
+            <option value="$PROJECT_DIR$/01. Instance methods/Complex numbers" />
+            <option value="$PROJECT_DIR$/01. Instance methods/Counter" />
+            <option value="$PROJECT_DIR$/01. Instance methods/Declare me" />
+            <option value="$PROJECT_DIR$/01. Instance methods/In a box" />
+            <option value="$PROJECT_DIR$/01. Instance methods/Instance method and its class" />
+            <option value="$PROJECT_DIR$/01. Instance methods/Invoke instance method" />
+            <option value="$PROJECT_DIR$/01. Instance methods/Patient needs a doctor" />
+            <option value="$PROJECT_DIR$/01. Instance methods/Simulating a clock" />
+            <option value="$PROJECT_DIR$/01. Instance methods/The Robot class" />
+            <option value="$PROJECT_DIR$/01. Instance methods/Theory" />
+            <option value="$PROJECT_DIR$/01. Instance methods/What is it" />
+            <option value="$PROJECT_DIR$/02. Access modifiers/Accessibility outside the package" />
+            <option value="$PROJECT_DIR$/02. Access modifiers/Accessing class's fields" />
+            <option value="$PROJECT_DIR$/02. Access modifiers/Admissible modifiers" />
+            <option value="$PROJECT_DIR$/02. Access modifiers/Existing keywords to control access" />
+            <option value="$PROJECT_DIR$/02. Access modifiers/Select correct lines" />
+            <option value="$PROJECT_DIR$/02. Access modifiers/Select correct lines 2" />
+            <option value="$PROJECT_DIR$/02. Access modifiers/Select correct lines 3" />
+            <option value="$PROJECT_DIR$/02. Access modifiers/Statements" />
+            <option value="$PROJECT_DIR$/02. Access modifiers/Suitable modifiers" />
+            <option value="$PROJECT_DIR$/02. Access modifiers/Theory" />
+            <option value="$PROJECT_DIR$/02. Access modifiers/Types of access modifiers" />
+            <option value="$PROJECT_DIR$/02. Access modifiers/Which things cannot be private" />
+            <option value="$PROJECT_DIR$/03. Getters and setters/Account" />
+            <option value="$PROJECT_DIR$/03. Getters and setters/Book" />
+            <option value="$PROJECT_DIR$/03. Getters and setters/Choose a pair of getter and setter" />
+            <option value="$PROJECT_DIR$/03. Getters and setters/Complex" />
+            <option value="$PROJECT_DIR$/03. Getters and setters/Getting the full name" />
+            <option value="$PROJECT_DIR$/03. Getters and setters/The name of getter" />
+            <option value="$PROJECT_DIR$/03. Getters and setters/The name of setter" />
+            <option value="$PROJECT_DIR$/03. Getters and setters/Theory" />
+            <option value="$PROJECT_DIR$/04. Static members/About static members" />
+            <option value="$PROJECT_DIR$/04. Static members/Accessing static members" />
+            <option value="$PROJECT_DIR$/04. Static members/Applying the static keyword" />
+            <option value="$PROJECT_DIR$/04. Static members/Detail manufacturing" />
+            <option value="$PROJECT_DIR$/04. Static members/Mystery of the methods" />
+            <option value="$PROJECT_DIR$/04. Static members/Project constants and methods" />
+            <option value="$PROJECT_DIR$/04. Static members/Searching bugs" />
+            <option value="$PROJECT_DIR$/04. Static members/Statements" />
+            <option value="$PROJECT_DIR$/04. Static members/Static fields" />
+            <option value="$PROJECT_DIR$/04. Static members/Theory" />
+            <option value="$PROJECT_DIR$/04. Static members/Time constants" />
+            <option value="$PROJECT_DIR$/04. Static members/Too many cats" />
+            <option value="$PROJECT_DIR$/05. Initialization blocks/Find the value" />
+            <option value="$PROJECT_DIR$/05. Initialization blocks/Illegal assignments" />
+            <option value="$PROJECT_DIR$/05. Initialization blocks/Multiple instance blocks" />
+            <option value="$PROJECT_DIR$/05. Initialization blocks/Statements" />
+            <option value="$PROJECT_DIR$/05. Initialization blocks/Static initialization blocks" />
+            <option value="$PROJECT_DIR$/05. Initialization blocks/The value of a field" />
+            <option value="$PROJECT_DIR$/05. Initialization blocks/Theory" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

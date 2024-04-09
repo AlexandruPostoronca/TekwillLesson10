@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":05._Initialization_blocks-Static_initialization_blocks" external.linked.project.path="$MODULE_DIR$/../../../../05. Initialization blocks/Static initialization blocks" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="10._Instance_methods" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../05. Initialization blocks/Static initialization blocks">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../05. Initialization blocks/Static initialization blocks/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../05. Initialization blocks/Static initialization blocks/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../05. Initialization blocks/Static initialization blocks/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

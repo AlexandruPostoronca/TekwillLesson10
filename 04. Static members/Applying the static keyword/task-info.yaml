@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: final fields
+    is_correct: true
+  - text: methods
+    is_correct: true
+  - text: fields
+    is_correct: true
+  - text: object
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    encrypted_text: a3Oc3sOKihNm0o8Cls6Am4BU5WKavemmrYTYXmzh/WuQfzHR3doZI/3hHs82WT1cfu+S8Hbqcvqsd43cOU6Yw4tKU2eBBAacR/guEJ9XR/DWe7UxqJODhdAO/zUEx00FiLkjnN2tkLxBWwLWug1KXQ==
+    learner_created: false
+status: Unchecked
+record: -1
+custom_name: Applying the static keyword
+local_check: true
