@@ -7,11 +7,11 @@ public class MainTest {
         car.make = scanner.next();
         car.yearModel = scanner.nextInt();
         car.speed = scanner.nextInt();
-
-        car.accelerate();
-
-        car.brake();
-
-
+        for (int i = 0; i < 5; i++) {
+            car.accelerate();
+        }
+        for (int i = 0; i < 5; i++) {
+            car.brake();
+        }
     }
 }

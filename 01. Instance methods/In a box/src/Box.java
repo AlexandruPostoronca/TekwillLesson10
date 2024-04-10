@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Box {
 
     double height;
@@ -9,8 +7,7 @@ public class Box {
     // write a method here
     double result = 0;
 
-    public void getVolume() {
-        result = height * width * length;
+    void getVolume() {
+       result= height * width * length;
     }
 }
-

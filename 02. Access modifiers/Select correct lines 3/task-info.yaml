@@ -11,11 +11,17 @@ options:
     is_correct: true
 quiz_header: 'Select all the correct answers:'
 files:
-  - name: src/Main.java
+  - name: src/A.java
     visible: true
     encrypted_text: a3Oc3sOKihNm0o8Cls6Am4BU5WKavemmrYTYXmzh/WuQfzHR3doZI/3hHs82WT1cfu+S8Hbqcvqsd43cOU6Yw4tKU2eBBAacR/guEJ9XR/DWe7UxqJODhdAO/zUEx00FiLkjnN2tkLxBWwLWug1KXQ==
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 10 Apr 2024 10:33:09 UTC"
 record: -1
+selected_options:
+  - 0
+  - 3
 custom_name: Select correct lines
 local_check: true

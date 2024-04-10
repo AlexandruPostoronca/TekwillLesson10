@@ -1,12 +1,9 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Box box = new Box();
-        box.height = scanner.nextDouble();
-        box.width = scanner.nextDouble();
-        box.length = scanner.nextDouble();
+        Box box=new Box();
+        box.width=10;
+        box.height=10;
+        box.length=10;
         box.getVolume();
     }
 }

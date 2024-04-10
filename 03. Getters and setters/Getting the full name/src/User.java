@@ -9,13 +9,23 @@ class User {
 
     public void setFirstName(String firstName) {
         // write your code here
+        if (!firstName.isEmpty()) {
+            this.firstName = firstName;
+        }
     }
 
     public void setLastName(String lastName) {
         // write your code here
+        if (!lastName.isEmpty()) {
+            this.lastName = lastName;
+        }
+
     }
 
     public String getFullName() {
-        return ""; // write your code here
+        if (firstName.equals("")) return lastName;
+        if (lastName.equals("")) return firstName;
+        if (lastName.equals(firstName)) return "Unknown";
+        return firstName + " " + lastName; // write your code here
     }
 }

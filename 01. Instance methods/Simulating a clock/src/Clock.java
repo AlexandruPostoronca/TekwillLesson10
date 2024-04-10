@@ -5,5 +5,13 @@ class Clock {
 
     void next() {
         // implement me
+        ++minutes;
+        if (minutes == 60) {
+            minutes = 0;
+            hours++;
+            if (hours == 13) {
+                hours = 1;
+            }
+        }
     }
 }
