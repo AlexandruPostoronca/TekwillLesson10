@@ -4,13 +4,13 @@ class Car {
     String make;
     int speed;
 
-    public void accelerate() {
-        ++speed;
+    void accelerate() {
+        speed = speed + 5;
     }
 
-    public void brake() {
-        if (speed > 0) {
-            --speed;
+    void brake() {
+        if (speed >= 5) {
+            speed = speed - 5;
         }
     }
 }
