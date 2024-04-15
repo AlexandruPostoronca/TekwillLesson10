@@ -15,6 +15,10 @@ files:
     learner_created: false
 status: Failed
 feedback:
-  message: Index 1 out of bounds for length 1
-  time: "Sun, 14 Apr 2024 09:23:26 UTC"
+  message: Incorrect
+  time: "Mon, 15 Apr 2024 09:24:02 UTC"
+  expected: "1. Requested Screw\r\n1\r\n2. Requested Wrench\r\n2\r\n3. Requested Screw\r\
+    \n3\r\n4. Requested Wrench\r\n4\r\n5. Requested Lever\r\n5"
+  actual: "1. Requested Screw\r\n1\r\n2. Requested Screw\r\n2\r\n3. Requested Screw\r\
+    \n3\r\n4. Requested Screw\r\n4\r\n5. Requested Screw\r\n5"
 record: -1

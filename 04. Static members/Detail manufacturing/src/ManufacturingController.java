@@ -1,16 +1,17 @@
 class ManufacturingController {
     // here you may declare a field
-    static int requestedProducts;
+    static int detail=0;
 
     public static String requestProduct(String product) {
         // write your code here
-        String[] detail = product.split(" ");
-        requestedProducts = Integer.valueOf(detail[1]);
-        return "Requested detail "+requestedProducts;
+       if(!product.isEmpty()){
+           detail++;
+       }
+        return detail+". Requested Screw";
     }
 
     public static int getNumberOfProducts() {
         // write your code here
-        return  ++requestedProducts;
+        return detail;
     }
 }
