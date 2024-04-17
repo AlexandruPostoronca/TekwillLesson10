@@ -7,7 +7,7 @@ class ManufacturingController {
        if(!product.isEmpty()){
            detail++;
        }
-        return detail+". Requested Screw";
+        return detail+". Requested " + product;
     }
 
     public static int getNumberOfProducts() {
